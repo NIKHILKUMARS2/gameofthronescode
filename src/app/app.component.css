@@ -1,0 +1,12 @@
+.container{
+    background-color: black;
+}
+h1{
+    text-align: center;
+    color:white;
+}
+
+.btn,.dropdown-menu{
+    width: 100%;
+}
+

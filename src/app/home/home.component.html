@@ -1,0 +1,42 @@
+<div class="container">
+    <div *ngFor="let book_chars_house of all">
+        <div *ngFor="let collection of book_chars_house| orderBy:order ">
+
+<div class="row">
+            <div *ngIf="collection.isbn" >
+                <div class="card book" style="width:28rem;height: 15rem;">
+                    <div class="card-body ">
+                        <h5 class="card-title">Book</h5>
+                        <h4 class="card-subtitle mb-2 text-muted">{{collection.name}}</h4>
+                        <p class="card-text">ISBN:-{{collection.isbn}}</p>
+                        <p class="card-text">Authors:-{{collection.authors}}</p>
+
+                        <a [routerLink]="['/singlebook',collection.url]" class="card-link">More</a>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="collection.gender" >
+                <div class="card character" style="width:28rem;height: 15rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Character</h5>
+                        <h4 class="card-subtitle mb-2 text-muted">Gender:-{{collection.gender}}</h4>
+                        <p class="card-text">Aliases:- {{collection.aliases}}</p>
+
+                        <a [routerLink]="['/singlecharacter',collection.url]" class="card-link">More</a>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="collection.region">
+                <div class="card house" style="width:28rem;height: 15rem;">
+                    <div class="card-body ">
+                        <h5 class="card-title">House</h5>
+                        <h4 class="card-subtitle mb-2 text-muted">{{collection.name}}</h4>
+                        <p class="card-text">Region:-{{collection.region}}</p>
+                        <a [routerLink]="['/singlehouse',collection.url]" class="card-link">More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

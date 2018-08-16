@@ -1,0 +1,23 @@
+.container{
+    background-color: black;
+  
+      justify-content: center;
+      
+  }
+
+.card{
+    
+    border:solid;
+    border-color: red;
+    margin: 1em;
+    text-align: center;
+    color: white;
+}
+
+p{
+    font-size: 1rem;
+    overflow:hidden;
+    justify-content: center;
+}
+
+

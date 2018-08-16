@@ -1,0 +1,15 @@
+.container{
+  background-color: black;
+
+    justify-content: center;
+    
+}
+.book{
+    
+    border:solid;
+    border-color: red;
+    margin: 1em;
+    text-align: center;
+    color: white;
+}
+

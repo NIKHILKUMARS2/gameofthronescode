@@ -1,0 +1,20 @@
+<div class="container">
+     
+    <div *ngFor="let house of all" >
+      <div *ngFor="let collection of house|orderBy:order" >
+        
+          <div class="card house" >
+              <div class="card-body ">
+                  <h5 class="card-title">House</h5>
+                  <h4 class="card-subtitle mb-2 text-muted">{{collection.name}}</h4>
+                  <p class="card-text">Region:-{{collection.region}}</p>
+                  <a [routerLink]="['/singlehouse',collection.url]" class="card-link">More</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+    </div>
+
+
+    

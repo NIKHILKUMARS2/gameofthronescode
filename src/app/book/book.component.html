@@ -1,0 +1,19 @@
+<div class="container">
+     
+<div *ngFor="let book of all" >
+  <div *ngFor="let collection of book | orderBy:order" >
+    
+    <div class="card book" >
+      <div class="card-body ">
+        <h5 class="card-title">Book</h5>
+        <h4 class="card-subtitle mb-2 text-muted">{{collection.name}}</h4>
+        <p class="card-text">ISBN:-{{collection.isbn}}</p>
+        <p class="card-text">Authors:-{{collection.authors}}</p>
+        <a [routerLink]="['/singlebook',collection.url]" class="card-link">More</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+

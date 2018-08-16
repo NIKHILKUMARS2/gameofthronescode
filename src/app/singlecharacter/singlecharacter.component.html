@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="card" *ngIf="check==1">
+      <div class="card-header">
+          <h2 >  {{character.name}}</h2>
+        <div class="card-body" >
+            
+            <h3 >Gender : {{character.gender}}<br></h3>
+            <h3 >Born : {{character.born}}<br></h3>
+            <h3 >Died : {{character.died}}<br></h3>
+            <h3 >Aliases : {{character.aliases}}<br></h3>
+            <h3 >Culture : {{character.culture}}<br></h3>
+            <h3 >Played By : {{character.playedBy}}<br></h3>
+            <h3 >Titles : {{character.titles}}<br></h3>
+            <h3 >TV Series : {{character.tvSeries}}<br></h3>
+            <button type="button" class="btn btn-primary" (click)="goback();">GoBack</button>
+        </div>
+      </div>
+    </div>
+    
+    
+    </div>

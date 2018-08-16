@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  
+    <h1>Tv-Series(Game Of Thrones)</h1> 
+
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle " type="button" data-toggle="dropdown">Menu
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a [routerLink]="['/home']">All</a></li>
+        <li><a [routerLink]="['/book']">Books</a></li>
+        <li><a [routerLink]="['/character']">Characters</a></li>
+        <li><a [routerLink]="['/house']">House</a></li>
+      
+      </ul>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,16 @@
+.container{
+    background-color: black;
+  
+      justify-content: center;
+      
+  }
+  .house{
+      
+      border:solid;
+      border-color: green;
+      margin: 1em;
+      text-align: center;
+      color: white;
+  }
+  
+  

@@ -1,0 +1,29 @@
+<div class="container">
+<div class="card" *ngIf="check==1">
+  <div class="card-header">
+      <h2 > {{book.name}} </h2>
+    <div class="card-body" >
+        
+        <h3 >ISBN : {{book.isbn}}<br></h3>
+        <h3 >No. of Pages : {{book.numberOfPages}}<br></h3>
+        <h3 >Publisher : {{book.publisher}}<br></h3>
+        <h3 >Authors : {{book.authors}}<br></h3>
+        <h3 >Country : {{book.country}}<br></h3>
+        <h3 >Media Type : {{book.mediaType}}<br></h3>
+        <h3 >Released : {{book.released | date:'medium'}}<br></h3>
+        <h3>Characters:<br></h3>
+        <div *ngFor="let char of book.characters">
+          <p>{{char}}<br></p>
+        </div>
+        <h3 >PovCharacters:<br></h3>
+        <div *ngFor="let povchar of book.povCharacters">
+            <p>{{povchar}}<br></p>
+          </div>        
+
+        <button type="button" class="btn btn-primary" (click)="goback();">GoBack</button>
+    </div>
+  </div>
+</div>
+
+
+</div>

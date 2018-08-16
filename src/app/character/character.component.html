@@ -1,0 +1,17 @@
+<div class="container">
+     
+    <div *ngFor="let character of all" >
+      <div *ngFor="let collection of character | orderBy:order" >
+          <div class="card character" >
+              <div class="card-body">
+                  <h5 class="card-title">Character</h5>
+                  <h4 class="card-subtitle mb-2 text-muted">Gender:-{{collection.gender}}</h4>
+                  <p class="card-text">Aliases:- {{collection.aliases}}</p>
+                  <a [routerLink]="['/singlecharacter',collection.url]" class="card-link">More</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    </div>
+
+
